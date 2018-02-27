@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Holi</string>
+    <string name="time">10 A.M - 10 P.M</string>
+    <string name="location">UDACITY HQ, CA</string>
+    <string name="event">Event</string>
+    <string name="holi">Holi festival of colours</string>
+    <string name="song">Play Song</string>
+</resources>

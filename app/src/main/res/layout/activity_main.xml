@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.holi.holi.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:cropToPadding="true"
+        android:background="@drawable/android"
+        android:id="@+id/holiMg"/>
+
+    <TextView
+        android:id="@+id/textHoli"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/clanpronarrbold"
+        android:text="@string/holi"
+        android:textColor="@android:color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textHoli"
+        android:layout_alignLeft="@+id/textHoli"
+        android:layout_alignStart="@+id/textHoli"
+        android:fontFamily="@font/clanprobook"
+        android:text="@string/event"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:id="@+id/textEvent" />
+
+    <ImageView
+        android:layout_width="33dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/textHoli"
+        android:layout_alignStart="@+id/textHoli"
+        android:layout_below="@+id/textHoli"
+        android:background="@mipmap/ic_location"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHoli"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:fontFamily="@font/clanpronews"
+        android:text="@string/location"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:id="@+id/textLoca" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="12dp"
+        android:background="@mipmap/ic_time"
+        android:id="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/textLoca"
+        android:layout_alignStart="@+id/textLoca"
+        android:fontFamily="@font/clanpronews"
+        android:text="@string/time"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:id="@+id/textIme"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button"
+        android:text="@string/song"
+        android:onClick="play"
+        android:gravity="center"
+        android:id="@+id/buttonPlay" />
+</RelativeLayout>
