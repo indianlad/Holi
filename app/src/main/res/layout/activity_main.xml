@@ -4,15 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/android"
     tools:context="com.example.holi.holi.MainActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:cropToPadding="true"
-        android:background="@drawable/android"
-        android:id="@+id/holiMg"/>
 
     <TextView
         android:id="@+id/textHoli"
@@ -35,17 +29,9 @@
         android:fontFamily="@font/clanprobook"
         android:text="@string/event"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:id="@+id/textEvent" />
 
-    <ImageView
-        android:layout_width="33dp"
-        android:layout_height="30dp"
-        android:layout_alignLeft="@+id/textHoli"
-        android:layout_alignStart="@+id/textHoli"
-        android:layout_below="@+id/textHoli"
-        android:background="@mipmap/ic_location"
-        android:id="@+id/imageView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,35 +39,30 @@
         android:layout_below="@+id/textHoli"
         android:layout_marginLeft="11dp"
         android:layout_marginStart="11dp"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
         android:fontFamily="@font/clanpronews"
         android:text="@string/location"
+        android:drawableLeft="@mipmap/ic_location"
+        android:drawableStart="@mipmap/ic_location"
+        android:drawablePadding="10dp"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:id="@+id/textLoca" />
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView"
-        android:layout_below="@+id/imageView"
-        android:layout_marginTop="12dp"
-        android:background="@mipmap/ic_time"
-        android:id="@+id/imageView2" />
 
     <TextView
+        android:id="@+id/textIme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView2"
-        android:layout_alignLeft="@+id/textLoca"
-        android:layout_alignStart="@+id/textLoca"
+        android:layout_alignLeft="@+id/textHoli"
+        android:layout_alignStart="@+id/textHoli"
+        android:layout_below="@+id/textLoca"
+        android:drawableLeft="@mipmap/ic_time"
+        android:drawableStart="@mipmap/ic_time"
+        android:drawablePadding="10dp"
         android:fontFamily="@font/clanpronews"
         android:text="@string/time"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
-        android:id="@+id/textIme"/>
+        android:textSize="18sp" />
 
     <Button
         android:layout_width="200dp"
